@@ -1,0 +1,16 @@
+.containerContact {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap:2.5rem;
+
+    .introForm {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        gap:2.5rem;
+        max-width:100%;
+    }
+}

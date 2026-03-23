@@ -1,0 +1,37 @@
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 7rem;
+
+    .aboutMeText {
+        max-width: 60%;
+        
+        p span {
+            font-family: 'Atkinson Hyperlegible Next - Bold';
+         }
+    }
+
+    img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .aboutMe {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap:3rem;
+
+        img {
+            max-width:300px;
+        }
+
+        .aboutMeText {
+            max-width: 100%;
+        }
+        
+    }
+}

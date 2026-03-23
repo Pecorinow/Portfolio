@@ -1,0 +1,53 @@
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1.5rem;
+    width:100%;
+
+    .inputGrid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1.5rem;
+        width:100%;
+
+        input, textarea {
+            padding:1rem;
+            font-family: var(--textFont);
+            font-size:1.1rem;
+            background-color: var(--bg-color-2);
+            color:var(--text-color);
+            border-top:2px solid var(--bg-color);
+            border-right:2px solid var(--bg-color);
+            border-bottom:2px solid var(--bg-color);
+            border-left:2px solid var(--text-color);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            grid-column: 1 / -1;
+            height:250px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border:2px solid var(--text-color);
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: var(--text-color);
+            opacity: 0.5;
+        }
+    }
+
+    .contactButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+    }
+
+}

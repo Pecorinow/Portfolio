@@ -1,0 +1,58 @@
+.project {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:2.5rem;
+
+    img {
+        max-width: 500px;
+        border: solid 5px var(--bg-color-2);
+        
+    }
+
+    .presentation {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap:1rem;
+
+            .langDates {
+                font-style: italic;
+            }
+        }
+
+        .contact {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap:1rem;
+        }
+    }
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1200px) {
+    .project {
+        flex-direction: column;
+        gap:1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project img {
+            max-width: 100%;
+    }
+}

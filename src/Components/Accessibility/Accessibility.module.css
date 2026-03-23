@@ -1,0 +1,72 @@
+.accessibilityMenu {
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+    .containerAccessButton {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem;
+
+        .accessBtn {
+            border: none;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+    }
+}
+
+.accessMenu {
+    /*Gestion visibilité*/
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+
+    position: fixed;
+    right: 0;
+    top: 90px;
+    white-space: nowrap;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--text-color);
+    gap:0.3rem;
+
+    .accessChoiceBtn {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border:none;
+        font-family: var(--textFont);
+        font-size: 1.1rem;
+        color: var(--bg-color);
+        background-color: var(--text-color);
+        width: 100%;
+        padding:1rem;
+        gap:1rem;
+
+        .i {
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        }
+    }
+}
+
+.accessMenu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+

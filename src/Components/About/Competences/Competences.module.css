@@ -1,0 +1,38 @@
+.competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+
+    .tools {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap:3rem;
+
+        .toolGroup {
+            padding-bottom: 2.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap:1rem;
+            flex-wrap: wrap;
+        }
+        
+        .one, .two {
+            border-bottom: 1px solid var(--text-color);
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+  .competences {
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0rem;
+  }
+}
