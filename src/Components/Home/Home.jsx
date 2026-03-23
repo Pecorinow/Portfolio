@@ -10,11 +10,10 @@ export const Home = () => {
                     <p>Développeuse Full-Stack JavaScript</p>
                     <h1>Hello, moi c’est Caroline !  </h1>
                     <p>À la suite d’un parcours un peu sinueux et forte d’une formation intensive en développement web, je cherche à créer des sites accessibles, éco-responsables et BEAUX !</p>
-                    <button type='button' onClick='' className="btnDark">
-                    {/* TODO téléchargement au onClick */}
+                    <a href="/Caroline-Poveda_CV.pdf" download="Caroline-Poveda_CV.pdf" className="btnDark">
                         <span>Mon CV</span>
                         <i className="fa-solid fa-download"></i>
-                    </button>
+                    </a>
                 </div>
 
                 <div className={styles.introButtons}>

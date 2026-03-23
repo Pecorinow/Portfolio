@@ -84,6 +84,15 @@ nav .navList li a:hover::before, .navList li a:hover::after {
 
 /**------- Media queries ------- */
 
+@media (max-width: 580px) {
+    nav .navList {
+        width: 100vw;
+        height: 100dvh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (hover: hover) {
     nav .navBtn:hover {
         transform: translateY(-10px);

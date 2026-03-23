@@ -68,5 +68,10 @@
     transform: translateX(0);
 }
 
-
+@media (hover: hover) {
+    .accessMenu .accessChoiceBtn:hover {
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        }
+}
 
