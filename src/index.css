@@ -124,7 +124,7 @@ body {
   }
 
   .btnDark[aria-pressed="true"] {
-    color:vjar(--bg-color);
+    color:var(--bg-color);
     background-color: var(--text-color);
     border-color: var(--bg-color);
   }
