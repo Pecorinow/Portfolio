@@ -2,6 +2,7 @@ import { useState } from 'react'
 import style from './Projects.module.css'
 import { ProjectCard } from './ProjectChild/ProjectCard'
 import burnoutRadar from '../../assets/images/BurnoutRadar.png'
+import saveIt from '../../assets/images/SaveIt.png'
 
 
 export const Projects = () => {
@@ -11,7 +12,7 @@ export const Projects = () => {
             <h2>PROJETS</h2>
             <ProjectCard
                 isReversed={false}
-                image=""
+                image={saveIt}
                 alt="Page d'accueil du projet Save it !"
                 title="Save it !"
                 languages="HTML, CSS, PHP"
@@ -20,8 +21,8 @@ export const Projects = () => {
                     "Projet de groupe réalisé lors d’un Hackathon de 3 jours à Interface3.",
                     "Outil de gestion budgétaire, guidant l'utilisateur via un questionnaire pour éviter les achats impulsifs, avec suggestion d'alternatives et système de récompenses.",
                     "J’ai créé le Figma, et je me suis occupée de l’HTML et du CSS."]}
-                siteUrl=""
-                gitHubUrl=""
+                siteUrl="https://saveit.hackathon2025.interface3.be/connexion"
+                gitHubUrl="https://github.com/Closing-git/keep-your-money.git"
             />
             <ProjectCard
                 isReversed={true}
@@ -35,7 +36,7 @@ export const Projects = () => {
                     "Outil de diagnostic de burnout, avec questionnaire personnalisé, recherche de psychologues par spécialité et localisation via une API fictive.",
                     "Compétence développée : Développement front-end (HTML, CSS, JavaScript) avec manipulation de données structurées et filtrage dynamique."]}
                 siteUrl=""
-                gitHubUrl=""/>
+                gitHubUrl="https://github.com/Pecorinow/BurnoutRadar.git"/>
         </section>
     )
 }
