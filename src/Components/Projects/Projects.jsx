@@ -94,7 +94,7 @@ export const Projects = () => {
                     "Premier projet réalisé en autonomie à Interface3.",
                     "Outil de diagnostic de burnout, avec questionnaire personnalisé, recherche de psychologues par spécialité et localisation via une API fictive.",
                     "Compétence développée : Développement front-end (HTML, CSS, JavaScript) avec manipulation de données structurées et filtrage dynamique."]}
-                siteUrl="burnouttracker.vercell.app"
+                siteUrl="https://burnouttracker.vercel.app/"
                 gitHubUrl="https://github.com/Pecorinow/BurnoutRadar.git"/>
         </section>
     )
