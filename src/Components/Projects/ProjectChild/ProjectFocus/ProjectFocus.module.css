@@ -1,0 +1,136 @@
+.panel {
+    position: fixed;
+    top: 90px; /* hauteur du header */
+    right: 0;
+    width: 1100px; /* même largeur que les sections */
+    height: calc(100dvh - 90px);
+    overflow-y: auto;
+    background-color: var(--bg-color-2);
+    padding: 3rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 80;
+
+    .closeBtn {
+        margin-left: auto;
+        display: block;
+        background-color: var(--bg-color-2);
+        border:none;
+    }
+
+    .containerFocus {
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        line-height: 1.5rem;
+        gap:3rem;
+
+        h2 {
+            margin-top:2rem;
+        }
+
+        .section {
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: flex-start;
+            gap:2rem;
+
+            /** ---- SAVE IT ---- */
+
+            .saveitProjet {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap:2.5rem;    
+            }
+
+            .saveitRole {
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2.5rem;
+
+                .textScreen {
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap:2.5rem;
+                }
+
+                .screens {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap:1rem;
+                }
+            }
+        }
+    }
+}
+
+.panel.open {
+    transform: translateX(0);
+}
+
+figure {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem;
+
+    img {
+        max-width: 500px;
+    }
+
+    figcaption {
+        font-family: var(--textFont);
+    }
+}
+
+.text, .saveitBilan {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+/**------- Media queries ------- */
+
+@media (max-width: 1200px) {
+    .panel {
+        width: 80%;
+
+        .containerFocus .section {
+            .saveitProjet {
+                flex-direction: column;
+                align-items: center;
+                gap:1rem; 
+            }
+            .saveitRole {
+                gap:1rem;
+            
+                .textScreen {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap:1rem; 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .panel {
+        width: 100vw;
+        height: 100dvh;
+        /* justify-content: center;
+        align-items: center; */
+    }
+}
