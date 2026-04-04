@@ -86,8 +86,8 @@ export const Projects = () => {
             <ProjectCard
                 isReversed={true}
                 image={burnoutRadar}
-                alt="Page d'accueil du projet Burnout Radar !"
-                title="Burn-out Radar"
+                alt="Page d'accueil du projet Burnout Tracker"
+                title="Burn-out Tracker"
                 languages="HTML, CSS, JavaScript"
                 date="Novembre 2025"
                 description={[
@@ -95,7 +95,7 @@ export const Projects = () => {
                     "Outil de diagnostic de burnout, avec questionnaire personnalisé, recherche de psychologues par spécialité et localisation via une API fictive.",
                     "Compétence développée : Développement front-end (HTML, CSS, JavaScript) avec manipulation de données structurées et filtrage dynamique."]}
                 siteUrl="https://burnouttracker.vercel.app/"
-                gitHubUrl="https://github.com/Pecorinow/BurnoutRadar.git"/>
+                gitHubUrl="https://github.com/Pecorinow/BurnoutTracker.git"/>
         </section>
     )
 }
