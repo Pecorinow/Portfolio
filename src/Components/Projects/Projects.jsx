@@ -80,7 +80,7 @@ export const Projects = () => {
                         content: (
                             <div className={styleF.saveitBilan}>
                                 <p>Ce Hackathon a été riche en apprentissages, parfois à la dure. C'était ma toute première expérience avec GitHub en équipe, et nous avons vite réalisé l'importance de communiquer chaque modification pour éviter les conflits de code.</p>
-                                <p>J'ai aussi appris à lâcher prise sur la perfection : j'ai perdu un temps précieux à vouloir reproduire fidèlement ma maquette Figma pixel par pixel, alors que nous n'avions pas encore toutes le niveau technique pour y parvenir. Accepter de s'adapter à la réalité du moment est une compétence en soi.</p>
+                                <p>J'ai aussi appris à lâcher prise sur la perfection. J'ai perdu un temps précieux à vouloir reproduire fidèlement ma maquette Figma pixel par pixel, alors que nous n'avions pas encore toutes le niveau technique pour y parvenir. Accepter de s'adapter à la réalité du moment est une compétence en soi.</p>
                                 <p>Enfin, avec le recul, je répartirais mieux les rôles au sein de l'équipe. Certaines se sont retrouvées submergées pendant que d'autres n'avaient plus rien à faire, ce qui aurait pu être évité avec une meilleure organisation en amont.</p>
                             </div>
                         )
@@ -139,7 +139,7 @@ export const Projects = () => {
                             <div className={styleF.btPointTechnique}>
                                 <div className={styleF.textScreen}>
                                     <div className={styleF.text}>
-                                        <p>Côté JavaScript, le défi principal a été la conception du questionnaire et de son système de résultats. La fonction recupReponses() orchestre à elle seule trois sous-fonctions pour collecter, analyser et restituer les réponses de l'utilisateur de façon cohérente. La page de recherche de psychologues s'appuie sur une API fictive de thérapeutes que j'ai entièrement construite en JavaScript, filtrée dynamiquement selon les spécialités sélectionnées.</p> 
+                                        <p>Côté JavaScript, le défi principal a été la conception du questionnaire et de son système de résultats. La fonction recupReponses() orchestre à elle seule trois sous-fonctions pour collecter les réponses, calculer les scores, restituer les résultats de façon cohérente et y appliquer les classes correspondantes. La page de recherche de psychologues s'appuie quant à elle sur une API fictive de thérapeutes que j'ai entièrement construite en JavaScript, filtrée dynamiquement selon les spécialités sélectionnées.</p> 
                                         <p>Côté accessibilité, j'ai réalisé une refonte complète du site après sa première version : intégration des attributs aria (label, expanded, controls, live), audit avec l'outil d'accessibilité WAVE, et suppression des redondances identifiées.</p>
                                     </div>
                                     <figure>
@@ -165,9 +165,9 @@ export const Projects = () => {
                         title: "BILAN",
                         content: (
                             <div className={styleF.btBilan}>
-                                <p>Ce Hackathon a été riche en apprentissages, parfois à la dure. C'était ma toute première expérience avec GitHub en équipe, et nous avons vite réalisé l'importance de communiquer chaque modification pour éviter les conflits de code.</p>
-                                <p>J'ai aussi appris à lâcher prise sur la perfection : j'ai perdu un temps précieux à vouloir reproduire fidèlement ma maquette Figma pixel par pixel, alors que nous n'avions pas encore toutes le niveau technique pour y parvenir. Accepter de s'adapter à la réalité du moment est une compétence en soi.</p>
-                                <p>Enfin, avec le recul, je répartirais mieux les rôles au sein de l'équipe. Certaines se sont retrouvées submergées pendant que d'autres n'avaient plus rien à faire, ce qui aurait pu être évité avec une meilleure organisation en amont.</p>
+                                <p>Ce projet m'a confrontée à la réalité du développement JavaScript, car des actions qui semblaient simples en théorie se sont révélées bien plus complexes à implémenter. C'est une leçon que j'ai apprise à mes dépens, mais qui m'a permis de mieux évaluer la charge de travail réelle d'un projet par la suite !</p>
+                                <p>L'accessibilité m'a également donné une leçon importante : j'ai dû retravailler en profondeur la structure HTML pour rendre la navigation plus intuitive, alors qu'une réflexion en amont aurait évité ce travail en double. Penser accessibilité dès la phase de conception fait partie des réflexes que j'ai développés depuis</p>
+                                <p>Ce projet m'a finalement appris quelque chose sur ma façon de travailler : je m'investis pleinement à partir du moment où je comprends précisément à <span>qui</span> je m'adresse. Avant d'avoir cerné mon public cible, je me sentais perdue sur la façon de présenter les choses. Identifier l'utilisateur final n'est pas qu'une étape UX, c'est ce qui aiguille toutes les décisions qui suivent.</p>
                             </div>
                         )
                     }

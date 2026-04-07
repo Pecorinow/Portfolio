@@ -70,6 +70,43 @@
                     gap:1rem;
                 }
             }
+
+            /** ---- BURNOUT TRACKER ---- */
+
+            .btProjet, .btDemarche {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap:2.5rem;   
+            }
+
+            .btPointTechnique {
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2.5rem;
+
+                .textScreen {
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap:2.5rem;
+                }
+
+                .screens {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap:1rem;
+                }
+                
+                
+            }
+
         }
     }
 }
@@ -109,7 +146,7 @@ figure {
         width: 80%;
 
         .containerFocus .section {
-            .saveitProjet {
+            .saveitProjet, .btProjet, .btDemarche {
                 flex-direction: column;
                 align-items: center;
                 gap:1rem; 
@@ -118,9 +155,19 @@ figure {
                 gap:1rem;
             
                 .textScreen {
-                flex-direction: column-reverse;
-                align-items: center;
-                gap:1rem; 
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap:1rem; 
+                }
+            }
+
+            .btPointTechnique {
+                gap:1rem;
+            
+                .textScreen {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap:1rem; 
                 }
             }
         }
