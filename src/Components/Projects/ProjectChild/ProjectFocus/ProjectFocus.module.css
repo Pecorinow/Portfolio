@@ -122,10 +122,6 @@ figure {
     align-items: center;
     gap:0.5rem;
 
-    img {
-        max-width: 500px;
-    }
-
     figcaption {
         font-family: var(--textFont);
     }

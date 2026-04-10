@@ -10,7 +10,7 @@ export const ProjectCard = (props) => {
 
     return (
         <article id="project" className={`${styles.project} ${isReversed ? styles.reversed : ""}`}>
-            <img src={image} alt={alt}/>
+            <img src={image} alt={alt} loading="lazy"/>
 
             <div className={styles.presentation}>
                 <div className={styles.info}>

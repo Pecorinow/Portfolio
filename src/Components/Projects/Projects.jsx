@@ -41,7 +41,7 @@ export const Projects = () => {
                                     <p>J'ai proposé l'idée d'un outil de gestion budgétaire centré sur la prévention des achats impulsifs. Avant chaque achat, l'utilisatrice est guidée à travers un questionnaire pour évaluer si elle en a vraiment besoin. Pour rendre l'expérience plus engageante, mes camarades de la section jeux vidéos ont enrichi le concept avec un système de récompenses : chaque achat auquel on renonce fait gagner des items à son avatar.</p>
                                 </div>
                                 <figure>
-                                    <img src={saveitProjet}/>
+                                    <img src={saveitProjet} alt= "Maquette de la page de résultat du questionnaire" loading="lazy"/>
                                     <figcaption>Aperçu des résultats du questionnaire tel que prévu dans la maquette</figcaption>
                                 </figure>
                             </div>
@@ -53,7 +53,7 @@ export const Projects = () => {
                             <div className={styleF.saveitRole}>
                                 <div className={styleF.textScreen}>
                                     <figure>
-                                        <img src={saveitMaquetteEnsemble} alt="Vue d'ensemble de la maquette"/>
+                                        <img src={saveitMaquetteEnsemble} alt="Vue d'ensemble de la maquette" loading="lazy"/>
                                         <figcaption>Vue d'ensemble de la maquette Figma</figcaption>
                                     </figure>
                                     <div className={styleF.text}>
@@ -63,11 +63,11 @@ export const Projects = () => {
                                 </div>
                                 <div className={styleF.screens}>
                                     <figure>
-                                        <img src={saveitMaquettePage} alt="Page version maquette"/>
+                                        <img src={saveitMaquettePage} alt="Page version maquette" loading="lazy"/>
                                         <figcaption>Page version maquette</figcaption>
                                     </figure>
                                     <figure>
-                                        <img src={saveIt} alt="Page version site"/>
+                                        <img src={saveIt} alt="Page version site" loading="lazy"/>
                                         <figcaption>Page version site</figcaption>
                                     </figure>
                                 </div>
@@ -110,7 +110,7 @@ export const Projects = () => {
                                     <p>J'ai choisi de créer un outil de diagnostic du burn-out, sujet qui me tient particulièrement à cœur. Le site propose un questionnaire de 35 questions qui évalue le risque de l'utilisateur et identifie le type de burn-out concerné : professionnel, parental, personnel, relationnel ou post-masking. Ce dernier type est souvent méconnu, et l'un des partis pris du projet est justement de rappeler que le burn-out ne se limite pas à la sphère professionnelle.</p>
                                 </div>
                                 <figure>
-                                    <img src={burnoutTracker}/>
+                                    <img src={burnoutTracker} alt="Page d'accueil du site Burn-out Tracker" loading="lazy"/>
                                     <figcaption>Page d'accueil du site Burn-out Tracker</figcaption>
                                 </figure>
                             </div>
@@ -121,7 +121,7 @@ export const Projects = () => {
                         content: (
                             <div className={styleF.btDemarche}>
                                 <figure>
-                                    <img src={btInfos} alt="Explication du burn-out professionnel"/>
+                                    <img src={btInfos} alt="Explication du burn-out professionnel" loading="lazy"/>
                                     <figcaption>Focus et explications du le burn-out professionnel en page d'accueil</figcaption>
                                 </figure>
                                 <div className={styleF.text}>
@@ -143,17 +143,17 @@ export const Projects = () => {
                                         <p>Côté accessibilité, j'ai réalisé une refonte complète du site après sa première version : intégration des attributs aria (label, expanded, controls, live), audit avec l'outil d'accessibilité WAVE, et suppression des redondances identifiées.</p>
                                     </div>
                                     <figure>
-                                        <img src={btPsys} alt="Page de recherche d'un thérapeute par catégorie de burn-out et code postal"/>
+                                        <img src={btPsys} alt="Page de recherche d'un thérapeute par catégorie de burn-out et code postal" loading="lazy"/>
                                         <figcaption>Résultat de la recherche de thérapeute par catégorie de burn-out et code postal</figcaption>
                                     </figure>
                                 </div>
                                 <div className={styleF.screens}>
                                     <figure>
-                                        <img src={btQuestionnaire} alt="Questions posées dans le questionnaire"/>
+                                        <img src={btQuestionnaire} alt="Questions posées dans le questionnaire" loading="lazy"/>
                                         <figcaption>Morceau du questionnaire, avec cinq inputs de type radio par question.</figcaption>
                                     </figure>
                                     <figure>
-                                        <img src={btResultats} alt="Résultats du test pour le burn-out relationnel"/>
+                                        <img src={btResultats} alt="Résultats du test pour le burn-out relationnel" loading="lazy"/>
                                         <figcaption>Exemple de résultat du test pour la catégorie "burn-out relationnel", avec une moyenne sur cinq et les conseils liés à ce résultat.</figcaption>
                                     </figure>
                                 </div>
