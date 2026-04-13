@@ -115,6 +115,10 @@
     transform: translateX(0);
 }
 
+h2 {
+    line-height: 1.5;
+}
+
 figure {
     display:flex;
     flex-direction: column;
@@ -185,5 +189,7 @@ figure {
     .panel {
         padding: 2rem;
         padding-bottom: 6.5rem;
+
+
     }
 }
