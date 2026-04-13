@@ -11,7 +11,7 @@ export const AboutMe = () => {
                 <br></br>
                 <p>Particulièrement attentive aux questions d’<span>accessibilité</span> et de <span>bilan carbone</span> du web, je m’efforce de coder des sites à la fois responsables et attrayants.</p>
                 <br></br>
-                <p>Dans mon temps libre, je <span>dessine</span>, je fais de la <span>bande-dessinée</span> et je me forme à devenir <span>guide nature</span> 🌱 , le tout avec mon chat sur les genoux.</p>
+                <p>Dans mon temps libre, j'<span>écris</span>, je fais de la <span>bande-dessinée</span> et je me forme à devenir <span>guide nature</span> 🌱 , le tout avec mon chat sur les genoux.</p>
             </div>
             
             <img src={cvPhoto} alt="Photo de présentation" loading="lazy"/>
