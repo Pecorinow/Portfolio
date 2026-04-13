@@ -9,7 +9,7 @@
         max-width: 60%;
         
         p span {
-            font-family: 'Atkinson Hyperlegible Next - Bold';
+            font-family: var(--textFont-bold);
          }
     }
 

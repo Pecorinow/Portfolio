@@ -3,6 +3,13 @@ import styles from './ProjectFocus.module.css';
 
 export const ProjectFocus = ({ onClose, title, sections, isOpen }) => {
     const panelRef = useRef(null);
+    const closeBtnRef = useRef(null);
+
+    useEffect(() => {
+        if (isOpen && closeBtnRef.current) {
+            closeBtnRef.current.focus();
+        }
+    }, [isOpen]);
 
     useEffect(() => {
          if (!isOpen) return;
@@ -13,9 +20,19 @@ export const ProjectFocus = ({ onClose, title, sections, isOpen }) => {
             }
         };
 
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') onClose();
+        };
+
         document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
+        document.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('keydown', handleKeyDown);
+        };
     }, [isOpen, onClose]);
+    
 
     useEffect(() => {
     if (isOpen) {
@@ -30,8 +47,9 @@ export const ProjectFocus = ({ onClose, title, sections, isOpen }) => {
 }, [isOpen]);
 
     return (
-        <div className={`${styles.panel} ${isOpen ? styles.open : ''}`} ref={panelRef}>
+        <div className={`${styles.panel} ${isOpen ? styles.open : ''}`} ref={panelRef} inert={!isOpen}>
             <button 
+                ref={closeBtnRef}
                 type="button" 
                 onClick={onClose}
                 aria-label="Fermer le panneau"

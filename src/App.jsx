@@ -24,9 +24,23 @@ function App() {
       return () => observer.disconnect();
   },  [] );
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+        if (e.altKey && e.key === '1') {
+            document.querySelector('header button')?.focus();
+        }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+}, []);
+
   return (
     <>
-       <header>
+
+      <a href="#header" className="skip-link btnDark" onFocus={() => {}}>
+          Retour au menu : Alt+1
+      </a>
+       <header id="header">
         <Nav isHomeVisible={isHomeVisible}/> 
         <AccessibilityMenu/>
        </header>

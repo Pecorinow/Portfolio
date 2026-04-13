@@ -135,6 +135,10 @@ figure {
     gap:1rem;
 }
 
+.bold {
+    font-family: var(--textFont-bold);
+}
+
 /**------- Media queries ------- */
 
 @media (max-width: 1200px) {

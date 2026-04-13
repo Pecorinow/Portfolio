@@ -44,7 +44,9 @@ export const AccessibilityMenu = () => {
                 </button>
             </div>
 
-            <div className={`${styles.accessMenu} ${isOpen ? styles.open : ''}`}>
+            <div 
+            className={`${styles.accessMenu} ${isOpen ? styles.open : ''}`}
+            inert={!isOpen}>
 
                 <button type='button'
                 className={styles.accessChoiceBtn}
