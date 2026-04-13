@@ -140,7 +140,7 @@ export const Projects = () => {
                                 <div className={styleF.textScreen}>
                                     <div className={styleF.text}>
                                         <p>Côté JavaScript, le défi principal a été la <span className={styleF.bold}>conception du questionnaire</span> et de son système de résultats. La  <span className={styleF.bold}>fonction recupReponses()</span> orchestre à elle seule trois sous-fonctions pour collecter les réponses, calculer les scores, restituer les résultats de façon cohérente et y appliquer les classes correspondantes. La page de recherche de psychologues s'appuie quant à elle sur une <span className={styleF.bold}>API fictive</span> de thérapeutes que j'ai entièrement construite en JavaScript, filtrée dynamiquement selon les spécialités sélectionnées.</p> 
-                                        <p>Côté <span className={styleF.bold}>accessibilité</span>, j'ai réalisé une refonte complète du site après sa première version : intégration des attributs aria (label, expanded, controls, live), audit avec l'outil d'accessibilité WAVE, et suppression des redondances identifiées.</p>
+                                        <p>Côté <span className={styleF.bold}>accessibilité</span>, j'ai réalisé une refonte complète du site après sa première version : intégration des attributs aria (label, expanded, controls, live), audit avec l'outil d'accessibilité WAVE, et test de navigation au clavier.</p>
                                     </div>
                                     <figure>
                                         <img src={btPsys} alt="Page de recherche d'un thérapeute par catégorie de burn-out et code postal" loading="lazy"/>
