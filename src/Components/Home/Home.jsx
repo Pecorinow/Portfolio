@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styles from './Home.module.css';
 
 export const Home = () => {

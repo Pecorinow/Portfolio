@@ -21,7 +21,6 @@
 }
 
 .accessMenu {
-    /*Gestion visibilité*/
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);

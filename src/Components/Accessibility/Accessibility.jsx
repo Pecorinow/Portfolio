@@ -69,18 +69,6 @@ export const AccessibilityMenu = () => {
                     <span>Diminuer la police</span>
                 </button>
 
-                {/* <button type='button' className={styles.accessChoiceBtn}>
-                    <div className='animPause pauseShow '> */}
-                        {/* + Créer class pauseHide et pauseShow */}
-                        {/* <i className="fa-solid fa-circle-pause"></i> 
-                        <span>Désactiver les animations</span>
-                    </div>
-                    <div className='animPlay playHide'></div>
-                    <i className="fa-solid fa-circle-play"></i>
-                        {/* + Créer class playHide et playShow */}
-                    {/* <span>Activer les animations</span>
-                </button> */}
-
             </div>
         
     

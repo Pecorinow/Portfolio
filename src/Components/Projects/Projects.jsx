@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import style from './Projects.module.css'
 import styleF from './ProjectChild/ProjectFocus/ProjectFocus.module.css'
 import { ProjectCard } from './ProjectChild/ProjectCard'
 import burnoutTracker from '../../assets/images/BurnoutTracker.png'
